@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jufe's Portfolio</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Jufe's Portfolio</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <!--
+  HOME DIV
+  -->
+  <div class="page-container current-page" id="home">
+    <img class="profile-pic" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAApTAAAAJDA5MDkyZDY2LTFjZWUtNGZiNC04OTNhLTM1YjcyMGE5ZjYyMw.jpg" alt="Jufe Brown-Tsai">
+    <h1>Jufe's Portfolio Page</h1>
+    <p>Hello, this is a page about me and the projects that I've made.</p>
+    <ul id="list">My background:
+      <li>mechanical design</li>
+      <li>built web pages with frames and photoshop back in the day</li>
+      <li>have a 3 month old son</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <ul id='contact-list'>
+
+    </ul>
+
+    <a href="mailto:jufebrown@gmail.com?Subject=Contact%20Form">Contact Me</a>
+    <br>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206219.19392031018!2d-86.89783793752284!3d36.13795438916014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646671fb566b35%3A0xc032626a24e7cbf5!2sRefinery+Nashville!5e0!3m2!1sen!2sus!4v1502329026352" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+  <!--
+  PROJECTS DIV
+  -->
+  <div class="page-container hidden" id="projects">
+    <ol class="projects-list">
+      <li>Class Showcase</li>
+      <li><a href="choose-your-own-adventure/index.html">Choose Your Own Adventure</a></li>
+      <li><a href="jquery-sandbox/index.html">JQuery Sandbox</a></li>
+      <li>Web Store Hack-A-Thon</li>
+    </ol>
+  </div>
+
+
+  <!--
+  MEDIA DIV
+  -->
+  <div class="page-container hidden" id="media">
+    <div class="content">
+      <div id='greeting'>
+
+      </div>
+      <a href="../projects/while/index.html">Here's a project about while loops that I made!</a>
+      <a href="../projects/rps/index.html">Here's a rock paper scissors game to demonstrate my mastery of the Math object!</a>
+    </div>
+  </div>
+
+
+  <!--
+  BLOG DIV
+  -->
+  <div class="page-container hidden" id="blog">
+    <div class="content-area container row">
+
+        <div class="blog-content col-md-9">
+          <h2>First Post!</h2>
+          <p>
+            Welcome to my first blog post. I will be talking about coding and baby toys here. I hope <span class="highlight">fisher price</span> excites you.
+            <p>Nested paragraph</p>
+          </p>
+          <p>
+            second post
+          </p>
+        </div>
+
+        <div class="sidebar col-md-3">
+          <ul>
+            <li>dogs</li>
+            <li>cats</li>
+            <li>rats</li>
+            <li>elephants</li>
+            <li>ferrets</li>
+            <li>lions</li>
+            <li>cheetahs</li>
+            <li>buffalo</li>
+            <li>newts</li>
+            <li>snakes</li>
+            <li>sharks</li>
+            <li>whales</li>
+            <li>dolphins</li>
+            <li>jellyfish</li>
+            <li>zebras</li>
+          </ul>
+        </div>
+
+      </div>
+  </div>
+
+
+  <!--
+  CONTACT DIV
+  -->
+  <div class="page-container hidden" id="contact">
+    <div class="container">
+      <form class="" action="https://formspree.io/jufebrown@gmail.com"
+          method="POST">
+        <fieldset>
+          <legend>About you:</legend>
+          <input type="text" name="firstname" placeholder="First Name" size="100" autofocus required>
+          <input type="text" name="lastname" placeholder="Last Name" size="100" required>
+          <input type="email" name="userEmail" placeholder="your.email@example.com" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label>What's this message about?
+            <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+            <input type="radio" name="subject" value="personal" checked><span>Personal Message</span>
+            <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+          <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+          <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox.
+        </fieldset>
+
+        <fieldset>
+          <legend>Marketing</legend>
+          <label for="marketing">How did you hear about me?</label>
+          <select name="marketing">
+            <optgroup label="Online">
+              <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+              <option value="github">Online Portfolio (GitHub)</option>
+              <option value="search">Search Engine</option>
+              <option value="email">Email</option>
+            </optgroup>
+            <optgroup label="In-Person">
+              <option value="networking">We met at a networking event</option>
+              <option value="referral">Personal referral</option>
+              <option value="random">We met somewhere else</option>
+            </optgroup>
+            <option value="other">Other</option>
+          </select>
+
+        </fieldset>
+        <textarea name="user_message" rows="8" cols="40"></textarea>
+
+
+        <input type="submit" class="btn btn-lg">
+
+      </form>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
